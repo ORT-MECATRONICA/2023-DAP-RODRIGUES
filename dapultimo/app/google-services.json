@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "153596040482",
+    "project_id": "tpdap-c94a1",
+    "storage_bucket": "tpdap-c94a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153596040482:android:534f3bb27ea9786f27417b",
+        "android_client_info": {
+          "package_name": "com.dap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3WQYC_XJ7Qd4T5UH6hFon6sRizFAwwLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

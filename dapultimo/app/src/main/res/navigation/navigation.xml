@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/pantallaLogin">
+
+    <fragment
+        android:id="@+id/pantallaInicio"
+        android:name="com.example.tpfinaldap.PantallaInicio"
+        android:label="fragment_pantalla_inicio"
+        tools:layout="@layout/fragment_pantalla_inicio" >
+        <action
+            android:id="@+id/action_pantallaInicio_to_subirComida"
+            app:destination="@id/subirComida" />
+        <action
+            android:id="@+id/action_pantallaInicio_to_edit"
+            app:destination="@id/edit" />
+        <action
+            android:id="@+id/action_pantallaInicio_to_dataComida"
+            app:destination="@id/dataComida" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaLogin"
+        android:name="com.example.tpfinaldap.PantallaLogin"
+        android:label="fragment_pantalla_login"
+        tools:layout="@layout/fragment_pantalla_login" >
+        <action
+            android:id="@+id/action_pantallaLogin_to_pantallaRegister"
+            app:destination="@id/pantallaRegister" />
+        <action
+            android:id="@+id/action_pantallaLogin_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaRegister"
+        android:name="com.example.tpfinaldap.PantallaRegister"
+        android:label="fragment_pantalla_register"
+        tools:layout="@layout/fragment_pantalla_register" >
+        <action
+            android:id="@+id/action_pantallaRegister_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/subirComida"
+        android:name="com.example.tpfinaldap.SubirData"
+        android:label="fragment_subirComida"
+        tools:layout="@layout/fragment_subir_comida">
+        <action
+            android:id="@+id/action_subirComida_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit"
+        android:name="com.example.tpfinaldap.edit"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit_comida">
+        <action
+            android:id="@+id/action_edit_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataComida"
+        android:name="com.example.tpfinaldap.DataComida"
+        android:label="fragment_dataComida" />
+</navigation>
